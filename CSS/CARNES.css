@@ -1,0 +1,179 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    
+    background-color: #BEB7A4;
+    padding-top: 8vh; /* Espaço para compensar a altura do header */
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #e4ded3;
+    height: 8vh;
+    z-index: 1000;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    width: 250px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 2vw;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+.navbar li a:hover{
+    background-color: #D1CABC;
+    transition: 500ms ease;
+}
+
+
+.texto-imagem, 
+.texto-imagem2 {
+    margin-top: 1rem;
+    margin-bottom: 10rem; 
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.texto-imagem {
+    flex-direction: row; 
+    margin-left: 1rem;
+}
+
+.texto-imagem2 {
+    flex-direction: row-reverse; 
+    margin-right: 1rem;
+}
+
+.texto-imagem img, 
+.texto-imagem2 img {
+    display: inline-block;
+    width: 38vw;
+}
+
+.sub-texto, 
+.sub-texto2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 50%;
+    max-height: 60vh;
+    gap: 5rem;
+}
+
+.sub-texto h1, 
+.sub-texto2 h1 {
+    font-size: 32pt;
+}
+
+.sub-texto p, 
+.sub-texto2 p {
+    font-size: 16pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+}
+
+footer {
+    background-color: #e4ded3;
+    color: #333; 
+    padding: 15px 0; 
+    text-align: center; 
+    font-size: 14px; 
+    border-top: 1px solid #ccc; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #555; 
+    transition: color 0.3s ease, text-shadow 0.3s ease; 
+}
+  
+a:hover {
+    color: #BEB7A4; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    box-shadow: #555 ;
+}
+  
+a:visited {
+    color: #555; 
+}
+
+
+footer p {
+    margin: 0; 
+    color: #555; 
+}
+
+/* Estilos para telas Full HD (1080x1920) */
+@media screen and (max-width: 1920px) {
+    .texto-imagem, 
+    .texto-imagem2 {
+        margin-bottom: 8rem;
+        gap: 4rem;
+    }
+
+    .texto-imagem img, 
+    .texto-imagem2 img {
+        width: 36.5vw; /* Ajustando proporcionalmente */
+    }
+
+    .sub-texto, 
+    .sub-texto2 {
+        max-width: 55%; /* Reduzindo ligeiramente o tamanho */
+        max-height: 75vh;
+        gap: 5rem;
+    }
+
+    .sub-texto h1, 
+    .sub-texto2 h1 {
+        font-size: 38pt; 
+        padding-bottom: 2%;
+    }
+
+    .sub-texto p, 
+    .sub-texto2 p {
+        font-size: 15pt; /* Ajustando a fonte para telas menores */
+        margin-right: 11pt;
+    }
+}
+
+
+

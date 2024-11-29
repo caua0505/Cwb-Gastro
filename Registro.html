@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/Icon.jfif">
+    <link rel="stylesheet" href="CSS/LOGIN.css">
+    <title>CWB Gastro - Crie uma conta</title>
+</head>
+<body>
+    <header>
+        <img src="IMG/CWB_GASTRO_logo_transparent.png" alt="logo">
+    </header>
+    <div class="form-container">
+        <h2>Criar Conta</h2>
+        <form  id="regisForm"  action="/submit_account" method="post">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirme a Senha</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Criar Conta</button>
+            <div class="login-link">
+                <p>Já tem uma conta? <a href="Pag2.html">Entrar</a></p>
+            </div>
+        </form>
+        <script src="JS/Script registro.js"></script>
+</body>
+</html>

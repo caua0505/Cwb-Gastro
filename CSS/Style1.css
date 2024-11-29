@@ -1,0 +1,262 @@
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #BEB7A4;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #e4ded3;
+    height: 8vh;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 250px;
+}
+
+.teste {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2vw;
+}
+
+.teste li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+}
+
+.teste li a:hover {
+    background-color: #D1CABC;
+    transition: 500ms ease;
+}
+
+
+.lunz {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 8vh; 
+    height: 80vh;
+}
+
+
+.carousel {
+    position: relative;
+    width: 99%; 
+    height: 82vh; 
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%; 
+    display: none;
+}
+
+.carousel img.active {
+    display: flex;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.quadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+    text-align: center; 
+    background-color: #e4ded3;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    margin-top: -7vh;
+    width: 45%; 
+}
+
+.quadrado2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+    text-align: center; 
+    background-color: #e4ded3;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    margin-top: -7vh;
+    width: 45%; 
+}
+
+
+.text h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; 
+    height: 100%;
+}
+
+.text2 h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; 
+    height: 100%;
+}
+
+.quadrado2 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8vh;
+}
+
+.quadrado h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 14.1vh;
+    display: block;
+}
+
+.quadrado h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #222;
+    padding-bottom: 2vh;
+    
+}
+
+.quadrado2 h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 1vh; 
+}
+
+h3{
+    font-size: 1.3rem;
+    margin-top: 0.4vh;
+    font-weight: 600;
+    color:  #333;
+}
+
+
+.quadrado-button {
+    text-decoration: none;
+    color: #D1CABC;
+    padding: 10px 20px;
+    background-color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 3vh;
+}
+
+.quadrado-button:hover {
+    background-color: #BEB7A4;
+    color: #333;
+    border-color: #D1CABC; 
+    border-radius: 20px; 
+    transition: all 0.3s ease;
+}
+
+
+footer {
+    background-color: #e4ded3;
+    color: #333; 
+    padding: 15px 0; 
+    text-align: center; 
+    font-size: 14px; 
+    border-top: 1px solid #ccc; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+
+footer p {
+    margin: 0; 
+    color: #555; 
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 998px) {
+    .teste {
+        gap: 5vw;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .carousel {
+        width: 100%; /* O carrossel ocupa 100% da largura em telas menores */
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .teste {
+        gap: 2vw;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .quadrado {
+        width: 100%; /* Largura total em telas pequenas */
+    }
+}
